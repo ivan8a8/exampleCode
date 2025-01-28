@@ -16,7 +16,7 @@ let project = Project(
     targets: [
         .target(
             name: "ExampleCode",
-            destinations: [.iPhone, .iPad, .macWithiPadDesign, .macCatalyst, .appleVision],
+            destinations: [.iPhone, .iPad, .macWithiPadDesign],
             product: .app,
             bundleId: "com.ivanfabri.ExampleCode",
             deploymentTargets: .iOS("17.0"),
