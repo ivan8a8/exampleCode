@@ -30,17 +30,8 @@ let project = Project(
                 ])
             ],
             entitlements: "Sources/ExampleCode.entitlements",
-            scripts: [
-                TargetScript.post(
-                script:  "\"Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/Crashlytics/run\"",
-                name: "Crashlytics",
-                runForInstallBuildsOnly: true
-            )
-            ],
             dependencies: [
-                .external(name: "SDWebImage"),
-                .sdk(name: "StoreKit", type: .framework),
-                .sdk(name: "AdSupport", type: .framework, condition: .when([.ios, .catalyst])),
+                .external(name: "SDWebImage")
             ]
         )
     ],
