@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuizQuestionView" customModule="Greenie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="438"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-oT-2XB">
+                    <rect key="frame" x="20" y="59" width="353" height="345"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rFr-x2-DPp">
+                            <rect key="frame" x="30" y="20" width="293" height="198"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-Rc-IFQ">
+                                    <rect key="frame" x="66" y="0.0" width="161" height="45"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-8R-mxa">
+                                            <rect key="frame" x="10" y="0.0" width="141" height="45"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="AppColor100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="AppColor500"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="VNN-8R-mxa" secondAttribute="bottom" id="66a-mh-bEm"/>
+                                        <constraint firstAttribute="height" constant="45" id="DB0-D7-z4K"/>
+                                        <constraint firstItem="VNN-8R-mxa" firstAttribute="top" secondItem="K1z-Rc-IFQ" secondAttribute="top" id="KuH-5h-aGq"/>
+                                        <constraint firstItem="VNN-8R-mxa" firstAttribute="leading" secondItem="K1z-Rc-IFQ" secondAttribute="leading" constant="10" id="dZe-lf-Zfg"/>
+                                        <constraint firstAttribute="trailing" secondItem="VNN-8R-mxa" secondAttribute="trailing" constant="10" id="vCl-cR-5KQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdM-RA-9dZ">
+                                    <rect key="frame" x="26.666666666666686" y="44.999999999999993" width="240" height="124.33333333333331"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmarks" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-za-Bj3">
+                                            <rect key="frame" x="58.333333333333329" y="29.999999999999993" width="122.99999999999999" height="84.333333333333314"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="dRU-za-Bj3" secondAttribute="bottom" constant="10" id="E6u-CB-jdI"/>
+                                        <constraint firstItem="dRU-za-Bj3" firstAttribute="centerX" secondItem="zdM-RA-9dZ" secondAttribute="centerX" id="Ovj-w8-K4U"/>
+                                        <constraint firstItem="dRU-za-Bj3" firstAttribute="top" secondItem="zdM-RA-9dZ" secondAttribute="top" constant="30" id="cig-7z-ckv"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig0-F9-SFm">
+                                    <rect key="frame" x="115.99999999999999" y="169.33333333333334" width="61.333333333333329" height="28.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" name="AppColor900"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9882352941176471" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="layoutMargins" top="20" left="30" bottom="100" right="30"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yx2-oT-2XB" secondAttribute="bottom" id="3NJ-L0-dUU"/>
+                <constraint firstItem="yx2-oT-2XB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Gjn-Sp-H1m"/>
+                <constraint firstItem="yx2-oT-2XB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Rkl-aF-OI8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yx2-oT-2XB" secondAttribute="trailing" constant="20" id="a4M-py-k46"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="numberLabel" destination="VNN-8R-mxa" id="GJ2-oT-Zd7"/>
+                <outlet property="questionLabel" destination="ig0-F9-SFm" id="Ja1-jP-7GH"/>
+            </connections>
+            <point key="canvasLocation" x="101.5267175572519" y="-158.45070422535213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="questionmarks" width="123" height="85"/>
+        <namedColor name="AppColor100">
+            <color red="0.74509803921568629" green="0.92549019607843142" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppColor500">
+            <color red="0.090196078431372548" green="0.53333333333333333" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppColor900">
+            <color red="0.0" green="0.10196078431372549" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+"quiz.title" = "Quiz";
+"quiz.card.button.title" = "Continue";
+"quiz.card.score.text" = "Youre score is %@";
+"quiz.card.finished.bad" = "Bad results";
+"quiz.card.finished.ok" = "Ok results";
+"quiz.card.finished.great" = "Great results";
+"quiz.card.finished.top" = "Top results";
+"quizzes.title" = "All quizzes";
+"quizzes.current" = "Current";
+"quizzes.done" = "Done";
+"quizzes.active.item.text" = "%@ challenge";
+"quizzes.inactive.item.text" = "Test yourself %@";
+"quizzes.item.locked" = "This quiz is locked.";
+"quizzes.item.playAgain" = "Play again";
+"quizzes.item.play" = "Play";
+"alert.ok" = "Ok";
